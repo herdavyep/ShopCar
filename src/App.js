@@ -4,18 +4,20 @@
  *
  * @format
  * @flow
- */
+ */ 
  
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import List from './componentes/List'
 import Slider from './componentes/Slider'
+import Header from './componentes/Header'
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Header/>
         <Slider/>
         <Text >Welcome to Afuro!</Text>
         <List/>
